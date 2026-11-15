@@ -16,6 +16,8 @@ The tricky part is not just writing the ad. It also needs to arrive at a sensibl
 
 Upload a podcast, find possible breaks, let a few agents compare businesses and write an ad, generate the voice, and stitch it into the episode. There is a Studio page for setting things up and a separate listener page that just plays podcasts.
 
+**Most major Indian languages:** the pipeline can be adapted for multilingual podcasts and contextual ads using language-aware transcription, context review and Gnani TTS. Hindi/Hinglish has been tested in a prototype; each additional language needs transcription, placement and pronunciation validation before rollout.
+
 We also explored using a host's voice, with their permission, so they would not need to record every variation themselves. That could eventually become another way for hosts to earn from their voice. For now, the app has voice samples and permission controls; licensing and payments are ideas for later.
 
 ## The solution, in simple terms
