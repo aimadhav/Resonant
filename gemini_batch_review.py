@@ -1,4 +1,5 @@
 """Five-context batches with the user's selected Gemini models and key failover."""
+import all_prompts
 import argparse
 import collections
 import copy
@@ -14,8 +15,7 @@ import urllib.request
 from gemini_review import load_env,select_packets,validate_review,write_json,make_report,SCHEMA,INSTRUCTIONS
 
 VERSION='boundary-batch-v2'
-PROMPT=INSTRUCTIONS.replace('"first dopamine"','"the first item in a list"')+'''
-Evaluate each packet independently at its own CUT marker. Never transfer a judgment or evidence from one packet to another. Return exactly one review for each supplied slot_id inside the reviews array. Do not rank candidates. For an accept decision, support your explanation using both sides of the cut when possible. Quote one contiguous source excerpt per evidence item, with its exact sentence ID. If you cannot establish completion, choose uncertain rather than inventing evidence.'''
+PROMPT=all_prompts.BOUNDARY_BATCH_REVIEWER
 BATCH_SCHEMA={'type':'OBJECT','properties':{'reviews':{'type':'ARRAY','items':SCHEMA}},'required':['reviews']}
 
 
@@ -71,7 +71,7 @@ class Reviewer:
                 if elapsed<8:time.sleep(8-elapsed)
                 self.last_request=time.perf_counter();began=time.perf_counter()
                 data={'packets':packets}
-                if repair:data['format_reminder']='Earlier response could not be verified. Copy contiguous excerpts exactly from their individual sentence records. Do not paraphrase quotes or omit slots.'
+                if repair:data['format_reminder']=all_prompts.BOUNDARY_EVIDENCE_REPAIR
                 body={'systemInstruction':{'parts':[{'text':getattr(self,'prompt_override',PROMPT)}]},
                     'contents':[{'role':'user','parts':[{'text':json.dumps(data,ensure_ascii=False)}]}],
                     'generationConfig':{'responseMimeType':'application/json','responseSchema':getattr(self,'schema_override',BATCH_SCHEMA),
