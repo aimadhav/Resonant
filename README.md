@@ -8,9 +8,11 @@ You are listening to a podcast, getting into a story, and suddenly an unrelated 
 
 Say the host is talking about confidence and describes adding a little more weight at the gym each week. A gym ad could start by calling back to that example, then introduce the gym and give you a useful next step. It would feel connected to the conversation instead of appearing out of nowhere.
 
-That connection is what we mean by **Resonant**. Our hunch is that connecting an ad to an idea you are already thinking about could make it more memorable and its CTA more relevant. We have not tested whether it gets more clicks—we built the pipeline to explore the idea.
+That connection is what we mean by **Resonant**. Our hunch is that connecting an ad to an idea you are already thinking about could make it more memorable and its CTA more relevant.What if it could could come in the voice of host making it more authentic (ofcourse with permission).
 
 The tricky part is not just writing the ad. It also needs to arrive at a sensible moment, without cutting off a question, an explanation, or the end of a story.
+
+Using gnani TTS we can work with podcasts in 10+ indian languages including marathi,gujrati,tamil etc .
 
 ## What we built
 
