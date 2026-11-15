@@ -1,8 +1,9 @@
 """Launch local GPU/CPU processing in an isolated optional environment."""
-import json,os,subprocess,time
+import json,os,subprocess,time,threading
 from pathlib import Path
 from kaggle_job import Job,ROOT
 from settings import setting
+LOCAL_PROCESSING_LOCK=threading.Lock()
 
 def processor_python():
     explicit=setting('LOCAL_PROCESSOR_PYTHON')
@@ -17,6 +18,9 @@ def check_runtime(device='auto'):
 
 class LocalJob(Job):
     def run(self):
+        self.update(status='running',stage='local_queue',message='Waiting for the local processing slot')
+        with LOCAL_PROCESSING_LOCK:self._execute()
+    def _execute(self):
         started=time.perf_counter();out=self.directory/'result';out.mkdir(exist_ok=True)
         try:
             self.update(status='running',stage='local_processing',message='Processing on your device, model downloads may be needed on the first run')
