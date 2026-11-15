@@ -1,30 +1,22 @@
 # Resonant
 
-**Ads that pick up the thread of the conversation.**
+**A hackathon project about making podcast ads fit the conversation.**
 
-Resonant is a podcast advertising prototype that finds appropriate breaks, connects an advertisement to what the speakers were talking about, reviews the copy, generates speech, and publishes a continuous listening edition. Operators manage the work in Studio; listeners see podcasts and a player.
+## The idea
 
-## The context: a growing market, an awkward interruption
+You are listening to a podcast, getting into a story, and suddenly an unrelated ad cuts in. We wanted to try something different: what if the ad picked up something the speakers had just talked about?
 
-Podcast advertising is already a substantial business. IAB/PwC reports **$2.862 billion in U.S. podcast ad revenue in 2025**, growing **17.6%** year over year. This is traditional audio-podcast advertising, not the entire global podcast market. Separately, The Infinite Dial 2026 reports **167 million monthly U.S. podcast consumers**, or **58% of Americans age 12+**, including people who listen or watch. [IAB/PwC report, p.24](https://www.iab.com/wp-content/uploads/2026/04/IAB_PwC_Internet_Ad_Revenue_Report_Full_Year_2025_April_2026.pdf#page=24) · [Edison Research at SSRS](https://ssrs.com/insights/the-infinite-dial-2026/).
+Say the host is talking about confidence and describes adding a little more weight at the gym each week. A gym ad could start by calling back to that example, then introduce the gym and give you a useful next step. It would feel connected to the conversation instead of appearing out of nowhere.
 
-The opportunity is straightforward: a commercial can reach a valuable audience and still arrive in the wrong place, sound unrelated, or offer an unhelpful next step. Resonant asks whether the ad can continue an idea the listener is already thinking about.
+That connection is what we mean by **Resonant**. Our hunch is that connecting an ad to an idea you are already thinking about could make it more memorable and its CTA more relevant. We have not tested whether it gets more clicks—we built the pipeline to explore the idea.
 
-For example, a speaker explains gaining confidence through small improvements in weightlifting. A gym ad can refer back to that progression, introduce its actual facilities or introductory tour, and give a relevant CTA. It should not interrupt an unfinished thought or invent a promise that joining the gym will produce confidence.
+The tricky part is not just writing the ad. It also needs to arrive at a sensible moment, without cutting off a question, an explanation, or the end of a story.
 
-## Why resonance matters
+## What we built
 
-The product hypothesis is **better conversational fit → stronger relevance and memory associations → more useful CTA response**. A callback gives the product an association with an idea the listener has just heard. Context and associations can aid memory retrieval, but that general principle does not prove an ad-performance improvement. [Background on context and memory](https://www.nngroup.com/articles/recognition-and-recall/).
+Upload a podcast, find possible breaks, let a few agents compare businesses and write an ad, generate the voice, and stitch it into the episode. There is a Studio page for setting things up and a separate listener page that just plays podcasts.
 
-We want to improve qualified visits/clicks, code redemptions, recall and completion, not merely generate fluent speech. **This repository does not demonstrate a measured lift in CTR, conversions or recall.** Audio CTAs may lead to a later website visit rather than an immediate click. Controlled experiments and attribution are planned, rather than inferred from model-generated listener reactions.
-
-## The host's voice and the creator's opportunity
-
-Host reads can command a premium: Libsyn's published guidance lists **$24–$26 CPM for a 60-second baked-in host read**, compared with **$12–$15 CPM for programmatic inventory**. Those are seller rate ranges, not guaranteed host earnings. [Libsyn sponsorship guide](https://libsyn.com/blog/podcast-sponsorship/).
-
-With explicit permission, a reusable host voice could make campaign variants practical without requiring a new recording for every revision. The commercial opportunity includes host approval, licensing and compensation; payment and contract systems are future work. A familiar synthetic voice is not evidence that the host personally uses a product or endorses a generated claim. Spotify/Nielsen research found stronger emotional connection for recorded host reads, but similar recall and purchase-intent outcomes across host-read and voice-talent formats; it did not test cloned hosts. [Research and its limits](https://ads.spotify.com/en-US/news-and-insights/who-should-voice-your-podcast-ads/).
-
-Resonant already supports authorized reference uploads, per-podcast/per-advertiser voice permissions and revocation. These are local permission records, not verified identities. No host voice is automatically extracted from an uploaded episode.
+We also explored using a host's voice, with their permission, so they would not need to record every variation themselves. That could eventually become another way for hosts to earn from their voice. For now, the app has voice samples and permission controls; licensing and payments are ideas for later.
 
 ## The solution, in simple terms
 
@@ -76,13 +68,15 @@ Edit **[all prompts.py](<all prompts.py>)** to change the agents' instructions. 
 
 **Important nuances:** analysis is cached across campaign changes; local episode processing is queued to avoid competing GPU jobs; three ad-slot workflows can run concurrently; TTS uses a shared provider queue. Earlier context is selective retrieval, not perfect episode-wide thematic memory. Studio has buffered chunk playback, while the current listener app streams a published MP3 rather than doing per-listener server-side live insertion.
 
-See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the detailed pipeline, cache boundaries, voice handling and limitations, and **[PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)** for research context, economics and experimental design.
+See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the detailed pipeline, cache boundaries, voice handling and limitations, and **[PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)** for the ideas behind the hackathon project.
 
-## Future direction: a relevant response to a current need
+## Things we would like to try
 
-With a user's explicit opt-in, a future assistant integration could share a small, short-lived intent such as “I'm hungry, I have twenty minutes, and I'd like a vegetarian option.” Resonant could match an appropriate advertiser, verify the offer, and generate a natural spoken suggestion and useful CTA at a suitable moment.
-
-This is a roadmap idea. The current app does not read AI conversations, monitor someone's life or infer hunger. Such an integration would need minimal data sharing, clear permission and revocation, factual offer verification, and identifiable sponsored content. Longer-term conversation memory, host licensing/payments, real A/B tests, and scalable playlist/CDN delivery are also future work.
+- **Remember more of the conversation:** a good callback might come from an earlier story, not just the last few sentences.
+- **Use context the listener chooses to share:** if someone tells an AI assistant “I’m hungry and want something quick,” perhaps a connected app could use that intent to suggest a relevant food option through natural-sounding TTS. This would be opt-in; that integration is not built yet.
+- **More host-voice options:** let hosts approve campaigns and explore getting paid for authorized use of their voice.
+- **Find out what actually works:** compare different ads with real listeners instead of guessing which copy is better.
+- **More dynamic playback:** change the ad mix without exporting a whole new episode each time.
 
 ## Run it locally
 
