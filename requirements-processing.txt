@@ -1,0 +1,9 @@
+# Versions used by the successful Kaggle offline run; also used locally.
+numpy==2.2.6
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+whisperx==3.8.6
+silero-vad==6.2.3
+sentence-transformers==5.7.0
+soundfile>=0.12,<1

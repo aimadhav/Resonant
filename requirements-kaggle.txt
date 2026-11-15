@@ -1,0 +1,5 @@
+numpy==2.2.6
+soundfile>=0.12,<1
+silero-vad>=6,<7
+sentence-transformers>=3,<6
+whisperx>=3.3,<4

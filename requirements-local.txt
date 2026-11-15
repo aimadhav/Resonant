@@ -1,0 +1,2 @@
+# The web app uses Python's standard library. No third-party packages required.
+# Optional: requirements-processing.txt or requirements-kaggle-cli.txt.

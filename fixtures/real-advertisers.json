@@ -1,0 +1,111 @@
+[
+  {
+    "approved_claims": [
+      "The planner includes annual goal planning.",
+      "The system breaks goals into quarterly, weekly and daily priorities.",
+      "Daily Big 3 identifies three daily priorities."
+    ],
+    "approved_cta": "Try writing three priorities for tomorrow, then explore the Full Focus Planner system at full focus dot co",
+    "attributes": [
+      "analog"
+    ],
+    "banned_topics": [],
+    "category": "focus_planner",
+    "forbidden_claims": [
+      "The host endorses this product.",
+      "This product improves memory.",
+      "This product prevents burnout."
+    ],
+    "id": "full_focus",
+    "name": "Full Focus Planner",
+    "product": "Full Focus Planner",
+    "source_url": "https://fullfocus.co/system/",
+    "tags": [
+      "planning",
+      "goals"
+    ]
+  },
+  {
+    "approved_claims": [
+      "The BC02 is a compact analogue alarm clock.",
+      "It has a quiet quartz movement.",
+      "It has luminous tipped hands.",
+      "It has a crescendo beep alarm.",
+      "An AA battery is required and is not included."
+    ],
+    "approved_cta": "Explore the Braun alarm clock range at braun hyphen clocks dot com and check availability, do not promise the reviewed blue model is in stock",
+    "attributes": [
+      "analog"
+    ],
+    "banned_topics": [],
+    "category": "alarm_clock",
+    "forbidden_claims": [
+      "The host endorses this product.",
+      "This product improves memory.",
+      "This product prevents burnout."
+    ],
+    "id": "braun_clock",
+    "name": "Braun",
+    "product": "Braun BC02 analogue alarm clock",
+    "source_url": "https://braun-clocks.com/collections/analogue-clocks/products/bc02-classic-travel-analogue-alarm-clock-blue",
+    "tags": [
+      "bedtime",
+      "phone"
+    ]
+  },
+  {
+    "approved_claims": [
+      "Brick is a physical app blocker.",
+      "Users choose apps and websites to block with the companion app.",
+      "A physical rescan is required to exit ordinary blocking.",
+      "Brick supports compatible iPhones and Android phones."
+    ],
+    "approved_cta": "Choose which apps you would want to block, then check your phone compatibility at get brick dot com, do not claim all workarounds are impossible",
+    "attributes": [
+      "physical_device"
+    ],
+    "banned_topics": [],
+    "category": "app_blocker",
+    "forbidden_claims": [
+      "The host endorses this product.",
+      "This product improves memory.",
+      "This product prevents burnout."
+    ],
+    "id": "brick",
+    "name": "Brick",
+    "product": "Brick physical app blocker",
+    "source_url": "https://getbrick.com/pages/faq",
+    "tags": [
+      "phone",
+      "scrolling"
+    ]
+  },
+  {
+    "approved_claims": [
+      "HelloFresh delivers meal kits through a subscription service.",
+      "Meal kits include pre-measured ingredients and step-by-step recipes.",
+      "Customers can select meals for their plan.",
+      "Recipe information includes nutritional and allergy information."
+    ],
+    "approved_cta": "Browse the recipes at hello fresh dot com and check plans and delivery for your location, disclose that ordering meal kits is a subscription, do not invent a one-time order or a promo code",
+    "attributes": [
+      "food",
+      "subscription_required"
+    ],
+    "banned_topics": [],
+    "category": "meal_kit",
+    "forbidden_claims": [
+      "The host endorses this product.",
+      "This product improves memory.",
+      "This product prevents burnout."
+    ],
+    "id": "hellofresh",
+    "name": "HelloFresh",
+    "product": "HelloFresh meal kits",
+    "source_url": "https://www.hellofresh.com/about/how-it-works",
+    "tags": [
+      "cooking",
+      "recipes"
+    ]
+  }
+]

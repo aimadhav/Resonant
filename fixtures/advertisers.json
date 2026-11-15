@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ember_roast",
+    "name": "Ember Roast",
+    "category": "coffee",
+    "product": "Morning Blend ground coffee",
+    "attributes": ["food", "vegan", "vegetarian", "dairy_free", "caffeine_present", "standard_caffeine", "unsweetened", "one_time_purchase"],
+    "approved_claims": ["Morning Blend is medium-roast ground coffee.", "It is sold in 250-gram resealable bags.", "This coffee contains caffeine.", "The plain coffee contains no added sugar or dairy ingredients.", "Customers can choose a one-time purchase."],
+    "forbidden_claims": ["Improves focus, memory, learning, or executive function.", "Prevents fatigue or replaces sleep.", "Is recommended, used, or endorsed by a podcast host or guest.", "Is caffeine-free or safe for everyone."],
+    "tags": ["coffee", "morning routine", "brewing", "beverage"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "calm_shore",
+    "name": "Calm Shore",
+    "category": "coffee",
+    "product": "Evening Decaf whole-bean coffee",
+    "attributes": ["food", "vegan", "vegetarian", "dairy_free", "caffeine_present", "low_caffeine", "unsweetened", "one_time_purchase"],
+    "approved_claims": ["Evening Decaf is a decaffeinated whole-bean coffee.", "It is sold in 250-gram bags.", "Decaffeinated does not mean caffeine-free; this product contains residual caffeine.", "Customers can choose a one-time purchase."],
+    "forbidden_claims": ["Contains zero caffeine.", "Improves sleep or treats anxiety.", "Improves focus or memory.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["coffee", "decaf", "brewing", "evening routine"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "meadow_cup",
+    "name": "Meadow Cup",
+    "category": "herbal_tea",
+    "product": "Mint and rooibos herbal infusion",
+    "attributes": ["food", "vegan", "vegetarian", "dairy_free", "caffeine_free", "unsweetened", "one_time_purchase"],
+    "approved_claims": ["The infusion contains peppermint and rooibos.", "The infusion is caffeine-free.", "It contains no caffeine-bearing ingredients.", "Each box contains 20 individually wrapped infusion bags.", "The plain infusion has no added sugar."],
+    "forbidden_claims": ["Treats insomnia, anxiety, stress, or another medical condition.", "Produces relaxation or better sleep as a guaranteed outcome.", "Improves concentration or memory.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["tea", "caffeine-free", "warm drink", "evening routine"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "clear_page",
+    "name": "Clear Page",
+    "category": "focus_planner",
+    "product": "Undated paper weekly planner",
+    "attributes": ["non_food", "analog", "paper", "no_account", "no_tracking", "one_time_purchase"],
+    "approved_claims": ["The planner provides an undated weekly layout.", "Each week has spaces for three priorities, appointments, and notes.", "Using the paper planner requires no app or account.", "It is a one-time purchase."],
+    "forbidden_claims": ["Scientifically proven to improve attention, memory, or productivity.", "Treats ADHD or another condition.", "Guarantees that a listener will stop procrastinating or achieve a goal.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["planning", "priorities", "distractions", "weekly routine", "paper"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "night_fold",
+    "name": "Night Fold",
+    "category": "sleep_mask",
+    "product": "Adjustable cotton eye mask",
+    "attributes": ["non_food", "cotton", "screen_free", "no_account", "one_time_purchase"],
+    "approved_claims": ["The eye mask has a cotton outer fabric and an adjustable strap.", "It has a contoured shape around the eyes.", "It can be hand-washed according to its care instructions.", "It is sold as a one-time purchase."],
+    "forbidden_claims": ["Guarantees complete darkness for every wearer.", "Improves sleep quality or treats insomnia.", "Improves recovery, memory, or cognitive performance.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["eye mask", "bedtime", "travel", "screen-free routine"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "table_trail",
+    "name": "Table Trail",
+    "category": "meal_kit",
+    "product": "Three-dinner vegetarian meal kit",
+    "attributes": ["food", "vegetarian", "animal_ingredients", "dairy_present", "pre_portioned", "one_time_purchase"],
+    "approved_claims": ["Each kit includes ingredients and recipe cards for three vegetarian dinners for two adults.", "Ingredients are pre-portioned for the included recipes.", "This kit includes dairy ingredients and is not vegan or dairy-free.", "A one-time order is available; a subscription is not required."],
+    "forbidden_claims": ["Is vegan, dairy-free, or suitable for every dietary restriction.", "Improves brain function, focus, energy, or memory.", "Guarantees weight loss or a particular cooking time.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["meal planning", "cooking", "dinner", "ingredients", "weekly routine"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "stride_loop",
+    "name": "Stride Loop",
+    "category": "fitness_app",
+    "product": "Subscription workout-planning app",
+    "attributes": ["non_food", "digital", "account_required", "subscription_required", "tracking_optional"],
+    "approved_claims": ["The app provides workout scheduling and a library of guided movement sessions.", "Users can record completed sessions manually.", "An account and paid subscription are required.", "Activity tracking is optional."],
+    "forbidden_claims": ["Improves cognition, memory, mood, or a medical condition.", "Guarantees fitness, weight loss, or injury prevention.", "Is free, account-free, or available without a subscription.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["movement", "exercise", "workout planning", "routine"],
+    "banned_topics": ["personal bereavement", "self-harm"]
+  },
+  {
+    "id": "pulse_lift",
+    "name": "Pulse Lift",
+    "category": "energy_drink",
+    "product": "Caffeinated citrus energy drink",
+    "attributes": ["food", "vegan", "vegetarian", "dairy_free", "caffeine_present", "high_caffeine", "added_sugar", "one_time_purchase"],
+    "approved_claims": ["Each 250-milliliter can contains 120 milligrams of caffeine and 18 grams of sugar.", "The drink has a citrus flavor.", "The stated recipe contains no dairy ingredients.", "It is sold in packs of six cans."],
+    "forbidden_claims": ["Improves memory, concentration, learning, or mental performance.", "Replaces sleep, prevents fatigue, or treats a condition.", "Is sugar-free, caffeine-free, or suitable for every listener.", "Is recommended, used, or endorsed by a podcast host or guest."],
+    "tags": ["energy drink", "caffeine", "citrus", "beverage"],
+    "banned_topics": ["personal bereavement", "self-harm", "sleep deprivation as an achievement"]
+  }
+]

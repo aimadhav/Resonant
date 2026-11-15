@@ -1,0 +1,54 @@
+"""Fictional demo briefs; features are invented specifications, not real offers."""
+SPECS = [
+ ('open_room','Open Room','therapy_app','Therapy appointment app',['Browse therapist profiles by language and appointment format.','Request a video appointment through the app.'],'Browse the therapist profiles',['therapy','therapist','counseling','counselling','emotions','emotional'],['account_required']),
+ ('quiet_minutes','Quiet Minutes','meditation_app','Guided meditation library',['The library includes five and ten minute guided meditations.','Choose a session by length or theme.'],'Choose a five minute guided session',['meditation','meditate','mindfulness','breathing','breath'],['subscription_required']),
+ ('night_harbor','Night Harbor','sleep_audio','Bedtime audio library',['Choose from narrated bedtime stories and ambient sound tracks.','Set a playback timer in the app.'],'Explore the bedtime audio library',['sleep','bedtime','night','sleeping'],['subscription_required']),
+ ('pair_space','Pair Space','relationship_tools','Conversation card sets',['The card sets include prompts about shared routines, values, and future plans.','Choose a topic and take turns answering.'],'Explore the conversation card topics',['relationship','relationships','marriage','married','couple','couples','partner'],['one_time_purchase']),
+ ('home_ledger','Home Ledger','budgeting_app','Shared household budget app',['Create shared spending categories for a household.','Add expenses manually and view a monthly summary.'],'Explore the shared budget template',['money','budget','budgeting','spending','expenses','finances'],['account_required','subscription_required']),
+ ('skill_path','Skill Path','learning_platform','Short course platform',['Browse courses on writing, communication, and project planning.','Courses are divided into short video lessons.'],'Browse the course topics',['learn','learning','skills','education','course','courses','studying'],['subscription_required']),
+ ('career_canvas','Career Canvas','career_tools','Resume and interview toolkit',['Use editable resume templates.','Practice with a library of interview questions.'],'Explore the interview practice questions',['career','job','jobs','interview','resume','hiring'],['subscription_required']),
+ ('founder_desk','Founder Desk','business_tools','Small business workspace',['Create task boards and a shared client contact list.','Use templates for project handoffs.'],'Try a project handoff template',['business','entrepreneur','entrepreneurs','company','startup','founder','clients'],['subscription_required','account_required']),
+ ('speech_circle','Speech Circle','communication_course','Public speaking practice course',['Practice short speaking exercises with recording prompts.','Use checklists for organizing a presentation.'],'Explore the first speaking exercise',['speaking','presentation','presentations','communication','audience'],['one_time_purchase']),
+ ('word_routes','Word Routes','language_app','Language practice app',['Practice vocabulary with audio examples and flashcards.','Choose a daily practice session length.'],'Choose a language and preview a lesson',['language','languages','vocabulary','bilingual','translation'],['subscription_required']),
+ ('move_daily','Move Daily','fitness_app','Exercise session library',['Choose from bodyweight workouts and guided mobility sessions.','Filter sessions by duration and equipment.'],'Browse the equipment free sessions',['exercise','workout','workouts','fitness','mobility','training'],['subscription_required']),
+ ('trail_company','Trail Company','outdoor_gear','Day hiking bags',['The day bag has adjustable shoulder straps and two bottle pockets.','Choose from three bag sizes.'],'Explore the day bag sizes',['hiking','hike','outdoors','trail','camping','nature'],['one_time_purchase']),
+ ('family_table','Family Table','family_activities','Family activity card box',['The box includes screen free conversation prompts and drawing activities.','Select an activity by the time available.'],'Choose a ten minute family activity',['family','children','kids','parenting','parents','child'],['one_time_purchase']),
+ ('page_window','Page Window','reading_app','Ebook and audiobook library',['Browse ebooks and audiobooks by genre.','Save titles to a personal reading list.'],'Browse your next reading list',['reading','books','book','audiobook','read'],['subscription_required']),
+ ('maker_hours','Maker Hours','creative_hobbies','At home craft kits',['Each kit includes materials and step by step instructions for one project.','Choose from paper craft and beginner embroidery kits.'],'Explore the beginner project kits',['creative','creativity','hobby','hobbies','craft','art'],['one_time_purchase']),
+ ('neighbor_circle','Neighbor Circle','community_events','Local activity directory',['Browse community workshops and group activities by interest.','Save events to a personal list.'],'Browse a group activity by interest',['community','friends','friendship','social','belonging','loneliness'],['account_required']),
+ ('desk_balance','Desk Balance','workspace_gear','Adjustable laptop stand',['The stand has adjustable height and angle settings.','It folds flat for storage.'],'Explore the stand dimensions',['desk','workspace','office','laptop','posture'],['one_time_purchase']),
+ ('route_weekend','Route Weekend','travel_planning','Short trip planning tool',['Build a day by day itinerary and save places to a map.','Share an itinerary with travel companions.'],'Start a weekend itinerary',['travel','trip','trips','vacation','holiday'],['account_required']),
+ ('iron_yard','Iron Yard','gym_membership','Gym membership',['The gym includes a free weights area and cardio machines.','Members can book an introductory equipment tour.'],'Explore the gym facilities and membership terms',['gym','gyms','weights','lifting','workout','fitness'],['subscription_required']),
+ ('coach_stride','Coach Stride','personal_training','Personal training appointments',['Browse trainer profiles and session formats.','Book individual or small group training appointments.'],'Browse the trainer profiles and session options',['trainer','training','coaching','exercise','fitness','gym'],['account_required']),
+ ('lift_corner','Lift Corner','home_gym','Home workout equipment',['Choose from resistance bands, adjustable dumbbells, and exercise mats.','Product pages list equipment dimensions and weight ranges.'],'Compare the equipment sizes for your space',['dumbbell','dumbbells','weights','lifting','home','workout','equipment'],['one_time_purchase']),
+ ('studio_pulse','Studio Pulse','group_fitness','Group fitness class studio',['Browse strength, cycling, and dance class schedules.','Choose a single class booking or a class pack.'],'Find a class on the studio schedule',['class','classes','cycling','dance','fitness','workout'],['account_required']),
+ ('mat_morning','Mat Morning','yoga_classes','Yoga class library',['Choose guided yoga sessions by duration and experience level.','Sessions include standing sequences and seated routines.'],'Preview a beginner yoga session',['yoga','stretching','stretch','flexibility','mat'],['subscription_required']),
+ ('core_studio','Core Studio','pilates_classes','Pilates studio appointments',['Browse mat and reformer class schedules.','Class listings show the format, length, and equipment used.'],'Explore the introductory class formats',['pilates','reformer','core','studio'],['account_required']),
+ ('run_together','Run Together','running_club','Community running club',['Choose from scheduled group runs at different distances.','Event listings include the meeting point and route.'],'Find a group run and check its route',['running','run','runner','runners','jogging','marathon'],['account_required']),
+ ('pool_lane','Pool Lane','swimming_classes','Swimming lesson bookings',['Browse individual and small group swimming lessons.','Choose a lesson by experience level and available time.'],'Browse the beginner swimming lesson times',['swimming','swim','pool','laps'],['account_required']),
+ ('summit_wall','Summit Wall','climbing_gym','Indoor climbing gym',['The gym offers bouldering areas and beginner orientation sessions.','Rental climbing shoes are available at the venue.'],'Check the beginner orientation schedule',['climbing','bouldering','climb','climber'],['one_time_purchase']),
+ ('round_house','Round House','boxing_classes','Boxing fitness classes',['Classes include coached bag drills and footwork practice.','The timetable lists beginner and mixed experience sessions.'],'Explore the beginner boxing class timetable',['boxing','boxer','kickboxing','footwork','martial'],['account_required']),
+ ('pace_wear','Pace Wear','activewear','Workout clothing',['Choose training shirts and shorts in multiple sizes.','Product pages include fabric details and size measurements.'],'Check the size guide for your next training outfit',['activewear','sportswear','clothing','workout','fitness','gym'],['one_time_purchase']),
+ ('session_log','Session Log','workout_tracking','Workout log app',['Record exercises, sets, repetitions, and weights manually.','Save workout templates and view previous session entries.'],'Build your first workout log template',['reps','sets','workout','training','lifting','progress'],['account_required']),
+]
+
+def advertisers():
+    rows=[]
+    for aid,name,category,product,claims,cta,tags,attributes in SPECS:
+        claims=list(claims)
+        if 'subscription_required' in attributes:claims.append('Access requires a subscription.')
+        if 'account_required' in attributes:claims.append('An account is required.')
+        rows.append(dict(id=aid,name=name,category=category,product=product,approved_claims=claims,approved_cta=cta,tags=tags,attributes=['non_food']+attributes,
+          fictional=True,fact_provenance='Fictional demo product specifications, not a real business or offer',
+          forbidden_claims=['Treats or cures a medical condition.','Guarantees improved health, relationships, wealth, performance, or career outcomes.','Is used or endorsed by the host or guest.'],
+          banned_topics=['self-harm','personal bereavement']))
+    return rows
+
+CATEGORY_CUES={category:tags for _,_,category,_,_,_,tags,_ in SPECS}
+CATEGORY_CUES.update(focus_planner=['plan','plans','planning','write','writing','priorities','goal','goals','journal'],alarm_clock=['alarm','bedtime','bed'],app_blocker=['scrolling','scroll','notifications','distractions','distraction','digital'],meal_kit=['cooking','cook','recipe','recipes'],herbal_tea=['tea','herbal'],sleep_mask=['sleep','bedtime','bed'],coffee=['coffee','caffeine','espresso','decaf'])
+
+def categories_for(text):
+    import re
+    tokens=set(re.findall(r'\w+',text.lower()))
+    scores={cat:len(tokens&set(cues)) for cat,cues in CATEGORY_CUES.items()}
+    return [cat for cat in sorted(scores,key=lambda c:-scores[c]) if scores[cat]>0]
